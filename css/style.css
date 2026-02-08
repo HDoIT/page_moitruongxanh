@@ -294,7 +294,7 @@ ul {
         justify-content: center;
     }
 
-    .logo{
+    .logo {
         /* transform: scale(2); */
         margin-right: 50px;
     }
@@ -1172,6 +1172,44 @@ ul {
     opacity: 0.7;
 }
 
+/* Floating Zalo Button */
+.floating-zalo {
+    position: fixed;
+    bottom: 100px;
+    left: 30px;
+    z-index: 999;
+}
+
+.zalo-button {
+    display: flex;
+    align-items: center;
+    background: #0068ff;
+    color: var(--white);
+    padding: 12px 20px;
+    border-radius: 50px;
+    box-shadow: 0 10px 25px rgba(0, 104, 255, 0.3);
+    font-weight: 600;
+    transition: var(--transition);
+    animation: pulse 2s infinite;
+    text-decoration: none;
+}
+
+.zalo-button:hover {
+    background: #0052cc;
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 104, 255, 0.4);
+}
+
+.zalo-button img {
+    width: 28px;
+    height: 28px;
+    margin-right: 8px;
+}
+
+.zalo-button span {
+    font-size: 16px;
+}
+
 /* Floating Hotline Button */
 .floating-hotline {
     position: fixed;
@@ -1348,18 +1386,39 @@ ul {
     .section {
         padding: 60px 0;
     }
+
     .banner-content h1 {
         font-size: 17px;
     }
+
     .banner-content p {
         font-size: 14px;
     }
+
     .section-title h2 {
         font-size: 28px;
     }
 
     .banner {
         height: 400px;
+    }
+
+    .floating-zalo {
+        bottom: 85px;
+        left: 20px;
+    }
+
+    .zalo-button {
+        padding: 10px 16px;
+    }
+
+    .zalo-button img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .zalo-button span {
+        font-size: 14px;
     }
 
     .floating-hotline {
